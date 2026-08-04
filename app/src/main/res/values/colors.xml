@@ -28,4 +28,19 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 
+    <!-- Notification colors -->
+    <color name="notif_tag_bg">#DBEAFE</color>
+    <color name="notif_icon_bg_approved">#DCFCE7</color>
+    <color name="notif_icon_bg_found">#FEF9C3</color>
+    <color name="notif_icon_bg_recovered">#EDE9FE</color>
+    <color name="notif_icon_bg_rejected">#FEE2E2</color>
+    <color name="notif_unread_bg">#EFF6FF</color>
+
+    <!-- Extra missing colors -->
+    <color name="gray">#9CA3AF</color>
+    <color name="bg_light">#F1F5F9</color>
+    <color name="warning_text">#B45309</color>
+    <color name="primaryColor">#2563EB</color>
+    <color name="notif_unread_dot">#EF4444</color>
+
 </resources>

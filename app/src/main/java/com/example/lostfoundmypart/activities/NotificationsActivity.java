@@ -1,8 +1,9 @@
-package com.example.myapplication;
+package com.example.lostfoundmypart.activities;
 
 import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.lostfoundmypart.R;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;

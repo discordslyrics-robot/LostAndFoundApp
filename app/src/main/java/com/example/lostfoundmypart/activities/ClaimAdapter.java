@@ -13,9 +13,9 @@ import java.util.List;
 
 public class ClaimAdapter extends RecyclerView.Adapter<ClaimAdapter.ClaimViewHolder> {
 
-    private List<com.example.myapplication.Claim> claimList;
+    private List<Claim> claimList;
 
-    public ClaimAdapter(List<com.example.myapplication.Claim> claimList) {
+    public ClaimAdapter(List<Claim> claimList) {
         this.claimList = claimList;
     }
 
@@ -28,7 +28,7 @@ public class ClaimAdapter extends RecyclerView.Adapter<ClaimAdapter.ClaimViewHol
 
     @Override
     public void onBindViewHolder(@NonNull ClaimViewHolder holder, int position) {
-        com.example.myapplication.Claim claim = claimList.get(position);
+        Claim claim = claimList.get(position);
         holder.tvItemName.setText(claim.getItemName());
         holder.tvClaimDate.setText("Submitted on: " + claim.getDate());
         holder.tvStatus.setText("Status: " + claim.getStatus());

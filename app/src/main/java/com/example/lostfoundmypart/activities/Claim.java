@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.lostfoundmypart.activities;
 
 public class Claim {
     private String itemName;

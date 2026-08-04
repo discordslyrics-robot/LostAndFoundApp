@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base deep gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#0A0E27"
+                android:centerColor="#1A1040"
+                android:endColor="#0D1B4B"
+                android:angle="135" />
+        </shape>
+    </item>
+
+    <!-- Large glowing circle top-left -->
+    <item
+        android:top="-180dp"
+        android:left="-180dp"
+        android:right="200dp"
+        android:bottom="400dp">
+        <shape android:shape="oval">
+            <solid android:color="#3D2B8E" />
+        </shape>
+    </item>
+
+    <!-- Medium glowing circle bottom-right -->
+    <item
+        android:top="400dp"
+        android:left="200dp"
+        android:right="-120dp"
+        android:bottom="-120dp">
+        <shape android:shape="oval">
+            <solid android:color="#1A3A8E" />
+        </shape>
+    </item>
+
+    <!-- Small accent circle top-right -->
+    <item
+        android:top="-60dp"
+        android:left="220dp"
+        android:right="-60dp"
+        android:bottom="500dp">
+        <shape android:shape="oval">
+            <solid android:color="#2E1B6E" />
+        </shape>
+    </item>
+
+    <!-- Subtle blue glow mid-left -->
+    <item
+        android:top="250dp"
+        android:left="-100dp"
+        android:right="280dp"
+        android:bottom="100dp">
+        <shape android:shape="oval">
+            <solid android:color="#162C6E" />
+        </shape>
+    </item>
+
+</layer-list>

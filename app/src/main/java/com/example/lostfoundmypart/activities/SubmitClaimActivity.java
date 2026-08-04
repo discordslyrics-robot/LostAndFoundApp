@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.lostfoundmypart.activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.lostfoundmypart.R;
 
 public class SubmitClaimActivity extends AppCompatActivity {
 

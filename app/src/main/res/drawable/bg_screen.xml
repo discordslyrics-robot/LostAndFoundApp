@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Soft light gradient base -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#EEF2FF"
+                android:centerColor="#F0F5FF"
+                android:endColor="#E8F4FD"
+                android:angle="160" />
+        </shape>
+    </item>
+
+    <!-- Top right soft blue accent blob -->
+    <item
+        android:top="-80dp"
+        android:left="180dp"
+        android:right="-80dp"
+        android:bottom="500dp">
+        <shape android:shape="oval">
+            <solid android:color="#D0E8FF" />
+        </shape>
+    </item>
+
+    <!-- Bottom left soft purple accent blob -->
+    <item
+        android:top="500dp"
+        android:left="-80dp"
+        android:right="200dp"
+        android:bottom="-80dp">
+        <shape android:shape="oval">
+            <solid android:color="#DDD8F8" />
+        </shape>
+    </item>
+
+</layer-list>
