@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class HomeActivity extends AppCompatActivity {
 
-    MaterialCardView cardProfile, cardLost, cardFound, cardReports;
+    MaterialCardView cardProfile, cardReportLost, cardReportFound, cardViewLost, cardViewFound, cardViewSearch, cardReports;
     Button logoutBtn;
 
     FirebaseAuth auth;
@@ -36,48 +36,61 @@ public class HomeActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_home);
 
-        // views
+        // Leader's Views
         cardProfile = findViewById(R.id.cardProfile);
-        cardLost = findViewById(R.id.cardLost);
-        cardFound = findViewById(R.id.cardFound);
+        cardReportLost = findViewById(R.id.cardReportLost);
+        cardReportFound = findViewById(R.id.cardReportFound);
         cardReports = findViewById(R.id.cardReports);
         logoutBtn = findViewById(R.id.logoutBtn);
 
-        // logout
+        // User's Views
+        cardViewLost = findViewById(R.id.cardViewLost);
+        cardViewFound = findViewById(R.id.cardViewFound);
+        cardViewSearch = findViewById(R.id.cardViewSearch);
+
+        // Logout
         logoutBtn.setOnClickListener(v -> {
-
             auth.signOut();
-
             Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
-
             finish();
         });
 
-        // card clicks (optional)
-        cardProfile.setOnClickListener(v ->
-                Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show()
-        );
+        // Leader's actions
+        cardProfile.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
+        });
 
-        cardLost.setOnClickListener(v ->
-                Toast.makeText(this, "Lost Item", Toast.LENGTH_SHORT).show()
-        );
+        cardReportLost.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, ReportLostItemActivity.class));
+        });
 
-        cardFound.setOnClickListener(v ->
-                Toast.makeText(this, "Found Item", Toast.LENGTH_SHORT).show()
-        );
+        cardReportFound.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, ReportFoundItemActivity.class));
+        });
 
-        cardReports.setOnClickListener(v ->
-                Toast.makeText(this, "Reports", Toast.LENGTH_SHORT).show()
-        );
+        cardReports.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, MyReportsActivity.class));
+        });
+
+        // User's actions
+        cardViewLost.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, LostItemsActivity.class));
+        });
+
+        cardViewFound.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, FoundItemsActivity.class));
+        });
+
+        cardViewSearch.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, SearchActivity.class));
+        });
     }
 
-    // 🔥 auto login protection
     @Override
     protected void onStart() {
         super.onStart();
-
         if (auth.getCurrentUser() == null) {
             startActivity(new Intent(this, LoginActivity.class));
             finish();

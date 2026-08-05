@@ -49,7 +49,9 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:34.0.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-firestore")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
     // Cloudinary Android SDK
     implementation("com.cloudinary:cloudinary-android:2.5.0")
     implementation("com.github.bumptech.glide:glide:4.16.0")

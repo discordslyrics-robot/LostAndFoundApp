@@ -42,5 +42,9 @@
     <color name="warning_text">#B45309</color>
     <color name="primaryColor">#2563EB</color>
     <color name="notif_unread_dot">#EF4444</color>
+    
+    <color name="cardDarkSearch">#1A1A1A</color>
+    <color name="cardDarkLost">#1A1A1A</color>
+    <color name="cardDarkFound">#1A1A1A</color>
 
 </resources>

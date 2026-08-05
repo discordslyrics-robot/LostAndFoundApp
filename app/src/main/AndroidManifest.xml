@@ -53,6 +53,32 @@
         <activity
             android:name=".activities.MyReportsActivity"
             android:exported="false" />
+            
+        <!-- User's Activities -->
+        <activity
+            android:name=".activities.LostItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FoundItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ItemDetailsActivity"
+            android:exported="false" />
+            
+        <!-- Missing Group Activities -->
+        <activity
+            android:name=".activities.ClaimStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SubmitClaimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NotificationsActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
